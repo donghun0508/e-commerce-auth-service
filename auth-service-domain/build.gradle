@@ -1,0 +1,7 @@
+project(':auth-service-domain') {
+
+    dependencies {
+
+        implementation project(':auth-service-common')
+    }
+}

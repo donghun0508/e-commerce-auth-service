@@ -1,0 +1,18 @@
+project(':auth-service-container') {
+    bootJar {
+        enabled = true
+        archiveFileName = 'auth-service-container.jar'
+    }
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter'
+
+        implementation project(':auth-service-adapter:auth-service-adapter-persistence')
+        implementation project(':auth-service-adapter:auth-service-adapter-web')
+        implementation project(':auth-service-infrastructure:auth-service-infrastructure-encrypt')
+        implementation project(':auth-service-application')
+        implementation project(':auth-service-common')
+        implementation project(':auth-service-domain')
+    }
+
+}

@@ -1,0 +1,10 @@
+project(':auth-service-infrastructure:auth-service-infrastructure-encrypt') {
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter'
+        implementation 'org.springframework.security:spring-security-crypto'
+
+        implementation project(':auth-service-application')
+        implementation project(':auth-service-common')
+    }
+}
