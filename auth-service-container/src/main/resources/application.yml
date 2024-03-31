@@ -1,0 +1,29 @@
+server:
+  shutdown: graceful
+  port: 8100
+
+spring:
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 2000
+
+  profiles:
+    active: local
+    group:
+      local:
+        - local-mysql
+        - local-redis
+
+      dev:
+
+      prod:
+
+    include:
+      - jwt
+
+
+logging:
+  level:
+    com.example.auth.service: debug
