@@ -1,4 +1,4 @@
-project(':auth-service-adapter:auth-service-adapter-persistence') {
+project(':auth-service-adapter:auth-service-adapter-persistence:auth-service-adapter-persistence-database') {
 
     dependencies {
 

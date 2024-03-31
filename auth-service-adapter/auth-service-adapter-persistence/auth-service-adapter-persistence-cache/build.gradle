@@ -1,0 +1,11 @@
+project(':auth-service-adapter:auth-service-adapter-persistence:auth-service-adapter-persistence-cache') {
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter'
+        implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+        implementation project(':auth-service-application')
+        implementation project(':auth-service-domain')
+        implementation project(':auth-service-common')
+    }
+}
